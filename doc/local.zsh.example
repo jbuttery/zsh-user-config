@@ -1,0 +1,30 @@
+## Local settings so that the main configuration files can be public
+
+## This file is read/parsed by zshenv (which means _all_ invocations of zsh),
+## so a) keep it short and sweet, and b) DO NOT generate output.
+
+## Initialize $local_settings associative array
+typeset -A local_settings
+
+## Your default printer, used for $PRINTER and $LPDEST
+local_settings[printer]="imagewriter2"
+
+## Internet services
+local_settings[nntp-server]="news.isp.com"
+local_settings[nntp-server-port]="119"
+local_settings[imap-server]="mail.isp.com"
+local_settings[imap-server-port]="143"
+local_settings[smtp-server]="smtp.isp.com"
+local_settings[smtp-server-port]="25"
+local_settings[irc-server]="chat.freenode.net"
+local_settings[irc-server-port]="6667"
+
+local_settings[irc-nickname]="mynick"
+local_settings[irc-ident]="guest42"
+local_settings[irc-finger]="response-for-ctcp-finger"
+local_settings[irc-name]="also-known-as-realname"
+
+local_settings[opscode-user]="my-opscode-username"
+
+## EOF
+########
