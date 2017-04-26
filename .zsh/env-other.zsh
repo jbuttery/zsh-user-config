@@ -11,8 +11,6 @@ typeset -gx GNUSTEP_LOCAL_ROOT=""
 typeset -gx GNUSTEP_SYSTEM_ROOT="/usr/lib/GNUstep"
 typeset -gx GNUSTEP_USER_ROOT="${HOME}/.gnustep"
 typeset -gx GREP_COLORS="ms=01;31:mc=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36"
-#typeset -gx GREP_OPTIONS='--color=auto --binary-files=binary --directories=recurse --exclude="*.o" --exclude="a.out" --exclude="*.so" --exclude="*.ko"'
-typeset -gx GREP_OPTIONS='--color=auto --binary-files=binary --directories=recurse'
 typeset -gx HACKDIR="${HOME}/.nethack/playground"
 typeset -gx LOCALRES='/etc/resolv.conf'
 typeset -gx LOCALDEF="${HOME}/.dig.env"

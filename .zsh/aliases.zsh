@@ -15,6 +15,8 @@ alias cd/='cd /'
 alias axine="aaxine -extended -eight -dim -bold -reverse -normal -boldfont -inverse -width 175 -height 79 ${*}"
 alias dfx='df --human-readable --print-type --exclude-type=tmpfs --exclude-type=devtmpfs --exclude-type=debugfs --portability | column -t'
 alias fics="xboard -ics -icshost freechess.org -icsport 5000 -colorize -icslogon ${HOME}/.icsrc"
+alias grep="grep --color=auto --binary-files=binary --directories=recurse"
+alias grep-nobin='--color=auto --binary-files=binary --directories=recurse --exclude="*.o" --exclude="a.out" --exclude="*.so" --exclude="*.ko"'
 alias hist="fc -liD"
 alias histadd="fc -AI"
 alias ppid="ps --no-header -o ppid"
