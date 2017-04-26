@@ -11,7 +11,9 @@ localConsoleNumber=${match[1]}
 umask 0077
 
 ## Local configurations
-. ${ZDOTDIR}/local/zshenv/*.zsh
+for local_config_file in ${ZDOTDIR}/local/zshenv/*.zsh(N); do
+    . ${local_config_file}
+done
 
 ## EOF
 ######

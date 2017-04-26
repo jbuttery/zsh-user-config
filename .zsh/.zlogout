@@ -15,7 +15,9 @@ clear
 /usr/games/fortune -o
 
 ## Local configurations
-. ${ZDOTDIR}/local/zlogout/*.zsh
+for local_config_file in ${ZDOTDIR}/local/zlogout/*.zsh(N); do
+    . ${local_config_file}
+done
 
 ## EOF
 ########

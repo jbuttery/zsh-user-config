@@ -77,7 +77,9 @@ typeset -gx LD_PRELOAD=/usr/local/lib/libtrash.so
 TMOUT=60
 
 ## Local configurations
-. ${ZDOTDIR}/local/zshrc/*.zsh
+for local_config_file in ${ZDOTDIR}/local/zshrc/*.zsh(N); do
+    . ${local_config_file}
+done
 
 ## EOF
 ########

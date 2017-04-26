@@ -30,7 +30,9 @@ if [ -e ${HOME}/.hushlogin ] && diff -q /etc/motd ${HOME}/.motd-reference >/dev/
 fi
 
 ## Local configurations
-. ${ZDOTDIR}/local/zlogin/*.zsh
+for local_config_file in ${ZDOTDIR}/local/zlogin/*.zsh(N); do
+    . ${local_config_file}
+done
 
 ## EOF
 ########
