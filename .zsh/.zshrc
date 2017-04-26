@@ -64,7 +64,7 @@ compinit
 ## Load up SSH keys
 ## This is a simple shell wrapper around keychain that specifies my particular
 ## key filenames
-eval $(${HOME}/bin/keychain-bootstrap)
+eval $(${HOME}/.local/bin/keychain-bootstrap)
 
 ## Enable libtrash
 typeset -gx LD_PRELOAD=/usr/local/lib/libtrash.so
