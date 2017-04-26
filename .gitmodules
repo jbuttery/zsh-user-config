@@ -1,6 +1,6 @@
 [submodule ".zsh/zle-syntax-highlighting"]
 	path = .zsh/zle-syntax-highlighting
-	url = git@github.com-jbuttery:zsh-users/zsh-syntax-highlighting.git
+	url = git@jbuttery.github.bogus:zsh-users/zsh-syntax-highlighting.git
 [submodule ".zsh/git-prompt"]
 	path = .zsh/git-prompt
-	url = git@github.com-jbuttery:jbuttery/zsh-git-prompt.git
+	url = git@jbuttery.github.bogus:jbuttery/zsh-git-prompt.git
